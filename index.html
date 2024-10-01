@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="style">
+    <link rel="stylesheet" href="alt.css" id="alt">
     <title>Mejlepčí hráči NHL</title>
 </head>
-<body style="background-color: black;">
-    <header style="background-color: white;">
+<body>
+    <header>
         <a href="https://nhl.com"><img src="assets/NHL_logo.png" alt="NHL logo" style="width: 5%;"></a>
+        <input type="checkbox" name="colorMode" id="switch">
+        <label for="switch" id="switchLabel">Switch color mode</label>
     </header>
 
     <main>
-    <h1 style="text-align: center;">Top 5 NHL hráčů</h1>
 
-    <section>
+    <section id="mainSection">
+        <h1 id="mainHeader">Top 5 NHL hráčů</h1>
+
         <ol>
             <li>
                 <h2><a href="https://www.eliteprospects.com/player/9678/wayne-gretzky">Wayne Gretzky</a></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
                 Maiores explicabo reiciendis, molestiae expedita repudiandae omnis in ipsa eos sequi alias velit iusto ut autem, inventore harum aliquid hic saepe ipsam pariatur id ea? Ad error quas voluptatem quis?
                 <mark>Qui dolor, aperiam eum amet maxime tenetur mollitia, illo corporis non quod, nisi ducimus ipsam. Doloremque enim odio eaque impedit labore repellat ipsa quis officia voluptatum laboriosam, dolores aut laborum!</mark></p>
             </li>
             <li>
                 <h2><a href="https://www.eliteprospects.com/player/8627/jaromir-jagr">Jaromír Jágr (samozřejmě)</a></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
                 <mark>Maiores explicabo reiciendis, molestiae expedita repudiandae omnis in ipsa eos sequi alias velit iusto ut autem, inventore harum aliquid hic saepe ipsam pariatur id ea?</mark> Ad error quas voluptatem quis?
                 Qui dolor, aperiam eum amet maxime tenetur mollitia, illo corporis non quod, nisi ducimus ipsam. Doloremque enim odio eaque impedit labore repellat ipsa quis officia voluptatum laboriosam, dolores aut laborum!</p>
             </li>
             <li>
                 <h2><a href="https://www.eliteprospects.com/player/21309/mark-messier">Mark Messier</a></h2>
-                <p><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis?</strong> Ullam perspiciatis porro sint.
+                <p class="paragraph"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis?</strong> Ullam perspiciatis porro sint.
                 Maiores explicabo reiciendis, molestiae expedita repudiandae omnis in ipsa eos sequi alias velit iusto ut autem, inventore harum aliquid hic saepe ipsam pariatur id ea? Ad error quas voluptatem quis?
                 Qui dolor, aperiam eum amet maxime tenetur mollitia, illo corporis non quod, nisi ducimus ipsam. Doloremque enim odio eaque impedit labore repellat ipsa quis officia voluptatum laboriosam, dolores aut laborum!</p>
             </li>
             <li>
                 <h2><a href="https://www.eliteprospects.com/player/20605/gordie-howe">Gordie Howe</a></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
                 Maiores explicabo reiciendis, molestiae expedita repudiandae omnis in ipsa eos sequi alias velit iusto ut autem, inventore harum aliquid hic saepe ipsam pariatur id ea? Ad error quas voluptatem quis?
                 Qui dolor, aperiam eum amet maxime tenetur mollitia, illo corporis non quod, nisi ducimus ipsam. Doloremque enim odio eaque impedit labore repellat ipsa quis officia voluptatum laboriosam, dolores aut laborum!</p>
             </li>
             <li>
                 <h2><a href="https://www.eliteprospects.com/player/21347/ron-francis">Ron Francis</a></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt maxime voluptatibus soluta, saepe cumque necessitatibus tenetur magnam veniam debitis amet et quam possimus dolores in quis? Ullam perspiciatis porro sint.
                 Maiores explicabo reiciendis, molestiae expedita repudiandae omnis in ipsa eos sequi alias velit iusto ut autem, inventore harum aliquid hic saepe ipsam pariatur id ea? Ad error quas voluptatem quis?
                 Qui dolor, aperiam eum amet maxime tenetur mollitia, illo corporis non quod, nisi ducimus ipsam. Doloremque enim odio eaque impedit labore repellat ipsa quis officia voluptatum laboriosam, dolores aut laborum!</p>
             </li>
         </ol>
     </section>
 
-    <section>
-        <h2 style="text-align: center;">Kanadská tabulka</h2>
+    <section id="tableSection">
+        <h2>Kanadská tabulka</h2>
         <table>
             <tr>
                 <th>Hráč</th>
