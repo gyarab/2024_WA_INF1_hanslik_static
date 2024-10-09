@@ -1,92 +1,96 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
-    background-color: rgb(98, 176, 240);
-    height: 125px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+header a img {
+    max-width: 100%;
 }
 
 main {
-    padding: 30px;
-    background-image: url("assets/nhl_background.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
-#switchLabel {
-    font-size: 30px;
-    color: #333;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-#switchLabel:hover {
-    color: #02105c;
-    background-color: white;
-}
-
-#switch {
-    display: none;
+#mainSection, #tableSection {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
 }
 
 #mainHeader {
     text-align: center;
-    font-size: 47px;
-    color: rgb(0, 20, 36);
-    margin: 0 auto;
-}
-
-#mainSection {
-    width: 70%;
-    border-radius: 40px;
-    margin: 0 auto;
-    background-color: rgb(13, 32, 49);
 }
 
 ol {
-  list-style: none;  
+    padding-left: 20px;
 }
 
-ol li h2 {
-    text-align: center;
+li {
+    margin-bottom: 20px;
 }
 
-ol li h2 a {
-    font-family: 'Courier New', Courier, monospace;
-    display: inline-block;
-    border-radius: 15px;
-    padding: 10px 15px;
-    margin: 15px 0;
-    text-transform: capitalize;
-    transition: all 0.3s;
+p {
+    text-align: justify;
 }
 
-ol > li > h2 > a:hover {
-    color: white;
-    background-color: cadetblue;
+table {
+    width: 100%;
+    margin-top: 20px;
 }
 
-li > .paragraph {
-    margin: 0 auto;
-    width: 60%;
-    text-indent: 20px;
-    line-height: 1.6;
-}
-
-#tableSection {
-    background-color: rgb(138, 194, 240);
-}
-
-#tableSection h2 {
-    text-align: center;
-    text-decoration: underline;
-}
-
-table, th, td {
-    color: white;
-    border: 1px solid white;
-    margin-left: auto;
-    margin-right: auto;
+th, td {
     padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mainSection, #tableSection {
+        margin-bottom: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header a img {
+        width: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 40px;
+    }
+
+    #mainSection, #tableSection {
+        padding: 40px;
+    }
+
+    #mainHeader {
+        font-size: 2em;
+    }
+
+    table {
+        font-size: 1.2em;
+    }
 }
